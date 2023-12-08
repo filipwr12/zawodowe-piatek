@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font: 16px Verdana;
+            line-height: 1.6;
+            background:#e0dfe1;
+        }
+
+        #blok{
+            width: 90%;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        a{
+            color: #354458;
+        }
+        #header{
+            height: 100px;
+            background: #33415d;
+            margin: 0 0 10px 0;
+        }
+        #header h1{
+            padding: 20px;
+            color: #e9e0d6;
+        }
+        #kon{
+            width: 75%;
+            background:#c0c0c0;
+            float: left;
+            padding: 1%;
+            overflow: hidden;
+        }
+        #menu{
+            background: #bbc0cb;
+            width: 20%;
+            float: right;
+            padding: 1%;
+            overflow: hidden;
+        }
+
+        #menu h4{
+            padding: 3px 3px 15px 3px;
+        }
+        #menu ul li{
+            list-style-type: none;
+            padding: 0 0 0 10px;
+        }
+        li a {
+            text-decoration: none;
+        }
+        @media only screen and (max-width: 650px){
+            #menu{
+                width: 88%;
+                position: absolute;
+                height: 30px;
+            }
+        
+        #menu h4{
+            display: none;
+        }
+        #menu ul li {
+            display: inline;
+        }
+        #kon{
+            width: 98%;
+            position: relative;
+            top: 30px;
+            margin-top: 3%;
+        }  
+    }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>Nagłowek</h1>
+    </header>
+    <div id="blok">
+        <section id="kon">
+            <h3>Opis</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ab 
+                praesentium iusto aut distinctio sapiente unde facere optio 
+                doloribus, sequi cupiditate consequuntur expedita. Explicabo 
+                et aliquid quos exercitationem, asperiores perferendis.</p>
+        </section>
+        <section id="menu">
+            <h4>Menu</h4>
+            <ul>
+                <li>Start</li>
+                <li>Kursy</li>
+                <li>Artykuły</li>
+                <li>Kontakt</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

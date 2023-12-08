@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            overflow: hidden;
+        }
+        #ramka{
+            margin-right: auto;
+            margin-left: auto;
+            min-width: 300px;
+            max-width: 1000px;
+        }
+        #naglowek{
+            background-color: #FCF;
+            font-size: 16pt;
+            color: #5e1138;
+            font-family: arial;
+            font-style: italic;
+            text-align: center;
+            font-weight: bold;
+        }
+        #stopka{
+            background-color: #c0c0c0;
+            font-size: 16pt;
+            color: blue;
+            font-family: arial;
+            font-style: italic;
+            clear: both;
+        }
+        .kolumny{
+            margin-top: 10px;
+            margin-right: 2%;
+            margin-bottom: 2%;
+            margin-left: 10px;
+            background-color: #c0c0c0;
+        }
+        #kol1{
+            float: left;
+            width: 20%;
+        }
+        #kol2{
+            padding: 25px;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: #555;
+            border: 1px solid #555;
+        }
+        li a {
+            display: block;
+            color: #fff;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        li{
+            text-align: center;
+            border-bottom:  1px solid #f1f1f1 ;
+        }
+        li a.active{
+            background-color: #4caf50;
+            color: white;
+        }
+        li a:hover (.active) {
+            background-color:#f1f1f1
+            color:black
+        }
+        @media only screen and (max-width:620px) {
+            #kol1{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="ramka">
+        <header id="naglowek">
+            Nagłowek
+        </header>
+        <section class="kolumny" id="kol1">
+            <h3>menu</h3>
+            <ul>
+                <li>Start</li>
+                <li>Kursy</li>
+                <li>Artykuł</li>
+                <li>Kontakt</li>
+            </ul>
+        </section>
+        <section class="kolumny" id="kol2">
+            <h3>opis</h3>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Dolores at magni sapiente quibusdam rem minima natus ipsam, 
+            fuga delectus reprehenderit praesentium dolorum totam 
+            veritatis ratione nulla cupiditate, corporis quis a.
+        </section>
+        <footer id="stopka">
+            Pracę wykonał Filip Wróbel
+        </footer>
+    </div>
+</body>
+</html>
